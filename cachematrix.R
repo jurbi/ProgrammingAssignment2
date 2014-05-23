@@ -1,5 +1,5 @@
-## Put comments here that give an overall description of what your
-## functions do
+## Two functions that are used to create a special object that stores a matrix
+## and caches its inverse.
 
 ##  creates a special "matrix" object that can cache its inverse
 
@@ -32,3 +32,10 @@ cacheSolve <- function(x, ...) {
   x$setinverse(m)
   m
 }
+
+
+## Test ##
+v <- c(rnorm(16))
+mat <- makeCacheMatrix(matrix(v, 4, 4))
+cacheSolve(mat)
+solve(matrix(v, 4, 4))
