@@ -34,8 +34,9 @@ cacheSolve <- function(x, ...) {
 }
 
 
-## Test ##
-v <- c(rnorm(16))
-mat <- makeCacheMatrix(matrix(v, 4, 4))
-cacheSolve(mat)
-solve(matrix(v, 4, 4))
+## Tests ##
+#v <- c(rnorm(16))
+#mat <- makeCacheMatrix(matrix(v, 4, 4))
+#mat$get()
+#cacheSolve(mat)
+#solve(matrix(v, 4, 4))
